@@ -15,32 +15,45 @@
     <script src="https://kit.fontawesome.com/4232a106e6.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <!-- Sidebar -->
-    <div class="sidebar">
-      <h3>Niko Viitiö's Portfolio</h3>
 
-      <ul>
-        <li><a href="index.html">About Me</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <div class="sidebar-list">
-          <li><a href="riflemen.html">The Riflemen</a></li>
-          <li><a class="active" href="models.html">3D Models</a></li>
+    <!-- Sidebar -->
+    <div class="sidebar-holder">
+      <div class="sidebar">
+        <!-- Close icon -->
+        <div class="sidebar-button">
+          <i class="fas fa-arrow-circle-left" onclick="toggleSidebar()"></i>
         </div>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+
+        <ul>
+          <li><a href="index.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <div class="sidebar-list">
+            <li><a href="riflemen.html">The Riflemen</a></li>
+            <li><a class="active" href="models.html">3D Models</a></li>
+          </div>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="darken"></div>
     </div>
 
     <!-- Navigation bar -->
     <div class="navbar">
+      <!-- Navigation bar button for mobile -->
+      <div class="sidebar-button">
+        <i class="fa fa-bars" onclick="toggleSidebar()"></i>
+      </div>
+
       <h3>Niko Viitiö's Portfolio</h3>
 
+      <!-- Navigation bar for pc etc.. -->
       <ul>
-        <!-- Navigation bar for pc etc.. -->
         <div class="navbar-links">
           <li><a href="contact.html">Contact</a></li>
           <li>
             <div class="dropdown">
-              <a class="active" href="projects.html">Projects</a>
+              <a href="projects.html">Projects</a>
               <div class="dropdown-content">
                 <a href="riflemen.html">The Riflemen</a>
                 <a class="active" href="models.html">3D Models</a>
@@ -49,20 +62,13 @@
           </li>
           <li><a href="index.html">About Me</a></li>
         </div>
-
-        <!-- Navigation bar for mobile -->
-        <li>
-          <div class="sidebar-button">
-            <i class="fa fa-bars" onclick="toggleSidebar()"></i>
-          </div>
-        </i>
       </ul>
     </div>
 
     <!-- Sidebar function -->
     <script>
       function toggleSidebar() {
-        var sidebar = document.getElementsByClassName("sidebar")[0];;
+        var sidebar = document.getElementsByClassName("sidebar-holder")[0];;
         if (sidebar.style.display === "block")
         {
           sidebar.style.display = "none";
@@ -103,11 +109,11 @@
         <div class="models">
           <!-- Flak 18 -->
           <div class="sketchfab-embed-wrapper">
-            <iframe width="900" height="506" title="Flak 18" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/6ab47b3701834e448ef0e6850ae085da/embed"></iframe>
+            <iframe title="Flak 18" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/6ab47b3701834e448ef0e6850ae085da/embed"></iframe>
           </div>
-          <!-- Kar 98 k -->
+          <!-- Kar 98k -->
           <div class="sketchfab-embed-wrapper">
-            <iframe width="900" height="506" title="Low poly Kar98k" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/634643dc70844a24a3236cab1d043a0b/embed"></iframe>
+            <iframe title="Low poly Kar98k" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/634643dc70844a24a3236cab1d043a0b/embed"></iframe>
           </div>
         </div>
       </div>

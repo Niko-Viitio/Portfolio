@@ -17,26 +17,38 @@
   <body>
 
     <!-- Sidebar -->
-    <div class="sidebar">
-      <h3>Niko Viitiö's Portfolio</h3>
-
-      <ul>
-        <li><a class="active" href="index.html">About Me</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <div class="sidebar-list">
-          <li><a href="riflemen.html">The Riflemen</a></li>
-          <li><a href="models.html">3D Models</a></li>
+    <div class="sidebar-holder">
+      <div class="sidebar">
+        <!-- Close icon -->
+        <div class="sidebar-button">
+          <i class="fas fa-arrow-circle-left" onclick="toggleSidebar()"></i>
         </div>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+
+        <ul>
+          <li><a class="active" href="index.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <div class="sidebar-list">
+            <li><a href="riflemen.html">The Riflemen</a></li>
+            <li><a href="models.html">3D Models</a></li>
+          </div>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="darken"></div>
     </div>
 
     <!-- Navigation bar -->
     <div class="navbar">
+      <!-- Navigation bar button for mobile -->
+      <div class="sidebar-button">
+        <i class="fa fa-bars" onclick="toggleSidebar()"></i>
+      </div>
+
       <h3>Niko Viitiö's Portfolio</h3>
 
+      <!-- Navigation bar for pc etc.. -->
       <ul>
-        <!-- Navigation bar for pc etc.. -->
         <div class="navbar-links">
           <li><a href="contact.html">Contact</a></li>
           <li>
@@ -50,20 +62,13 @@
           </li>
           <li><a class="active" href="index.html">About Me</a></li>
         </div>
-
-        <!-- Navigation bar for mobile -->
-        <li>
-          <div class="sidebar-button">
-            <i class="fa fa-bars" onclick="toggleSidebar()"></i>
-          </div>
-        </i>
       </ul>
     </div>
 
     <!-- Sidebar function -->
     <script>
       function toggleSidebar() {
-        var sidebar = document.getElementsByClassName("sidebar")[0];;
+        var sidebar = document.getElementsByClassName("sidebar-holder")[0];;
         if (sidebar.style.display === "block")
         {
           sidebar.style.display = "none";

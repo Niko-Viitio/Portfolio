@@ -14,9 +14,11 @@ hr {
   border-width: 1px;
 }
 
+/* 900 / 506 */
 iframe {
   max-width: 900px;
   width: 100%;
+  aspect-ratio: auto 16 / 9;
 }
 
 /* Classes */
@@ -42,6 +44,7 @@ iframe {
 
 /* Navigation bar*/
 .navbar {
+  min-height: 64px;
   background-color: #282846;
 }
 
@@ -84,8 +87,6 @@ iframe {
 .dropdown-content .active {
   border: 4px solid #007580;
   border-top-style: hidden;
-  border-right-style: hidden;
-  border-bottom-style: hidden;
 }
 
 .dropdown {
@@ -125,9 +126,15 @@ iframe {
   }
 }
 
+.sidebar-holder {
+  display: none;
+}
+
 .sidebar-button {
+  color: #D8EBE4;
   font-size: 30px;
-  margin-right: 20px;
+  margin: 0 10px 0 20px;
+  float: left;
 }
 
 .sidebar {
@@ -136,8 +143,8 @@ iframe {
   position: fixed;
 
   background-color: #282846;
-  box-shadow: 0 -4px 5px black;
-  display: none;
+  display: block;
+  z-index: 1;
 }
 
 .sidebar h3 {
@@ -165,13 +172,18 @@ iframe {
   text-decoration: none;
 }
 
-.sidebar i {
-  color: #007580;
-}
-
 .sidebar-list {
   list-style-type:disc;
   margin-left: 40px;
+}
+
+.darken {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+
+  display: block;
 }
 
 /* Footer */

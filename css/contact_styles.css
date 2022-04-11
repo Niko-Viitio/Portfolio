@@ -1,0 +1,93 @@
+/* Header */
+.header {
+  color: #FED049;
+  background-color: #007580;
+  font-family: 'Comfortaa', cursive;
+
+  text-shadow: 0 2px 5px black;
+  box-shadow: 0 0 5px 2px black inset;
+
+  background-image: url("https://www.yellowletterhq.com/wp-content/uploads/2021/09/Family-Street-View-Postcard.png");
+  background-repeat: no-repeat;
+  background-attachment: local;
+  background-position: center;
+  background-size: 100%;
+}
+
+.header h1 {
+  font-weight: 700;
+  font-size: 3em;
+}
+
+.header-content {
+  text-align: center;
+  padding: 8% 0;
+  margin: auto;
+}
+
+/* Body */
+.body {
+  background-color: #282846;
+}
+
+.body-content {
+  width: 900px;
+  padding: 70px 0;
+  margin: auto;
+}
+
+.body-content h2 {
+  text-align: center;
+}
+
+.body-content p {
+  text-align: justify;
+}
+
+/* Form */
+label {
+  margin: 5px 0;
+}
+
+input {
+  width: 250px;
+  float: right;
+}
+
+input, textarea {
+  resize: none;
+  color: #D8EBE4;
+  background-color: #282846;
+  border: 2px solid #007580;
+  padding: 4px;
+}
+
+input:hover, textarea:hover {
+  border: 2px solid #D8EBE4;
+}
+
+input:focus, textarea:focus {
+  outline: none !important;
+  border: 2px solid #D8EBE4;
+  background-color: #007580;
+}
+
+.button-holder {
+  text-align: center;
+}
+
+.send-button {
+  float: none;
+  margin: 0 auto;
+  width: 100px;
+  height: 40px;
+  border: 2px solid #007580;
+  border-radius: 5px;
+  font-size: 1.3em;
+  color: #D8EBE4;
+  background-color: #007580;
+}
+
+.send-button:hover {
+  border: 2px solid #D8EBE4;
+}

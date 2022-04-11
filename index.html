@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - About Me</title>
+    <!-- Link css -->
+    <link rel="stylesheet" href="css/common_styles.css">
+    <link rel="stylesheet" href="css/index_styles.css">
+    <!-- Load fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Inconsolata&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/4232a106e6.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h3>Niko Viitiö's Portfolio</h3>
+
+      <ul>
+        <li><a class="active" href="index.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <div class="sidebar-list">
+          <li><a href="riflemen.html">The Riflemen</a></li>
+          <li><a href="models.html">3D Models</a></li>
+        </div>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Navigation bar -->
+    <div class="navbar">
+      <h3>Niko Viitiö's Portfolio</h3>
+
+      <ul>
+        <!-- Navigation bar for pc etc.. -->
+        <div class="navbar-links">
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <div class="dropdown">
+              <a href="projects.html">Projects</a>
+              <div class="dropdown-content">
+                <a href="riflemen.html">The Riflemen</a>
+                <a href="models.html">3D Models</a>
+              </div>
+            </div>
+          </li>
+          <li><a class="active" href="index.html">About Me</a></li>
+        </div>
+
+        <!-- Navigation bar for mobile -->
+        <li>
+          <div class="sidebar-button">
+            <i class="fa fa-bars" onclick="toggleSidebar()"></i>
+          </div>
+        </i>
+      </ul>
+    </div>
+
+    <!-- Sidebar function -->
+    <script>
+      function toggleSidebar() {
+        var sidebar = document.getElementsByClassName("sidebar")[0];;
+        if (sidebar.style.display === "block")
+        {
+          sidebar.style.display = "none";
+        }
+        else
+        {
+          sidebar.style.display = "block";
+        }
+      }
+    </script>
+
+    <!-- Header -->
+    <div class="header">
+      <div class="header-content">
+        <img src="images/Myself.jpg" alt="">
+
+        <h1 class="animate">Niko Viitiö</h1>
+        <h3 class="animate">1st year game programming student at XAMK Kotka</h3>
+      </div>
+    </div>
+    <script src="scripts/headerZoom.js" charset="utf-8"></script>
+    <script src="scripts/animateHeader.js" charset="utf-8"></script>
+
+    <!-- Body -->
+    <div class="body">
+      <!-- About me -->
+      <div class="body-content">
+        <h2>About Me</h2>
+        <hr>
+        <p>
+          My name is Niko Viitiö and i'm currently 23 years old. I'm studying at XAMK Kotka in game programming.
+          I have graduated from vocational school as car mechanic in 2018 but it wasn't right job for me so here i'm learning more about programming and game industry.
+        </p>
+        <hr>
+      </div>
+
+      <!-- Game programming experience -->
+      <div class="body-content">
+        <h2>Game Programming Experience</h2>
+        <hr>
+        <p>
+          My first touch to the game programming came when i was a child and i wanted to mod Terraria. I somehow managed to make some simple mods but after all my interest came to an end.
+          When i grow up i purchased Game Maker: Studio and i made some simple 2D games with that and again my interest ended.
+          In 2018 i started learning Unity on my free time and since then i have spent most of my free time in making games with Unity.
+        </p>
+        <br>
+        <p>
+          I have made few mobile games that can be downloaded on Google Play, they aren't so complex but making them has taught me a lot of game development and programming.
+          They are basically endless runners with pixel art graphics and different themes. You can find out more of them on their own project pages.
+        </p>
+        <hr>
+      </div>
+
+      <!-- Modeling Experience-->
+      <div class="body-content">
+        <h2>Modeling Experience</h2>
+        <hr>
+        <p>
+          I have been modeling about same time as i have been using Unity. I mostly like to model low poly models but i can also make models with textures and high poly count.
+          I know how to animate in Blender but it really isn't the thing that i enjoy.
+          However i still do it as it is needed in games and it is also good thing to know how it works when programming animation controllers.
+        </p>
+        <hr>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <!-- LinkedIn icon -->
+      <i class="fab fa-linkedin" style="font-size:48px;" onclick="window.location='https://www.linkedin.com/in/niko-viiti%C3%B6-762223220/';"></i>
+      <!-- GitHub icon -->
+      <i class="fab fa-github-square" style="font-size:48px;" onclick="window.location='https://github.com/Niko-Viitio';"></i>
+      <br>
+      <p>© Niko Viitiö 2022</p>
+    </div>
+  </body>
+</html>

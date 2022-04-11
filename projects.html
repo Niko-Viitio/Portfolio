@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Projects</title>
+    <!-- Link css -->
+    <link rel="stylesheet" href="css/common_styles.css">
+    <link rel="stylesheet" href="css/projects_styles.css">
+    <!-- Load fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Inconsolata&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/4232a106e6.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <div class="navbar">
+      <h3>Niko Viitiö's Portfolio</h3>
+
+      <ul>
+        <li><a href="contact.html">Contact</a></li>
+        <li>
+          <div class="dropdown">
+            <a class="active" href="projects.html">Projects</a>
+            <div class="dropdown-content">
+              <a href="riflemen.html">The Riflemen</a>
+              <a href="models.html">3D Models</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="index.html">About Me</a></li>
+      </ul>
+    </div>
+
+    <!-- Header -->
+    <div class="header">
+      <div class="header-content">
+        <h1>Projects</h1>
+        <h3 class="project-name">The Riflemen</h3>
+      </div>
+    </div>
+    <script src="scripts/headerZoom.js" charset="utf-8"></script>
+
+    <!-- WIP, progress bar for changing pictures -->
+    <div class="bar-fill"></div>
+    <div class="bar-background"></div>
+
+    <script type="text/javascript">
+      var barFill = document.getElementsByClassName("bar-fill")[0];
+      var barBackground = document.getElementsByClassName("bar-background")[0];
+      var tick = 10;
+      var maxTime = 5;
+      var time = 0;
+
+      setInterval(updateBar, tick);
+
+      function updateBar() {
+        time += tick / 1000;
+        if (time >= maxTime) time = 0;
+
+        var fill = time / maxTime;
+        var unFill = 1 - fill;
+        barFill.style.width = (fill * 100).toString() + "%";
+        barBackground.style.width = (unFill * 100).toString() + "%";
+      }
+    </script>
+
+    <!-- WIP, change header background image -->
+    <script>
+      setInterval(changeImage, 5000);
+
+      const images = ["url('images/TheRiflemen1.png')", "url('images/Slidytires.png')", "url('images/Dodgyplanes.png')"];
+      const projects = ["The Riflemen", "Slidy Tires", "Dodgy Planes"];
+      var index = 0;
+
+      function changeImage() {
+        //Next index
+        if (index < images.length - 1) index++;
+        else index = 0;
+
+        //Find header and change its background
+        var header = document.getElementsByClassName("header")[0];
+        header.style.backgroundImage = images[index];
+
+        //Find h3 in header so we can change it to current projects Name
+        var project = document.getElementsByClassName("project-name")[0];
+        project.innerHTML = projects[index];
+      }
+    </script>
+
+    <!-- Body -->
+    <div class="body">
+      <!-- Short description of my work -->
+      <div class="body-content">
+        <h2>About Projects</h2>
+        <hr>
+        <p>
+          As i have been learning how to use Unity and Blender on my free time for a few years now, i have good experience in both even though i'm only first year student.
+          I have made a few mobile games for android with Unity and published them on the Google Play. Some of my models that i have made can be found on Sketchfab.
+        </p>
+        <br>
+        <p>
+          Currently i'm making multiplayer FPS called "The Riflemen" with Unity using Photon for networking. It's work in progress but i plan to release it to the Steam.
+          I started this project before my studies, on july 2021.
+        </p>
+        <hr>
+      </div>
+      <!-- Project list -->
+      <div class="body-content">
+        <h2>All Projects</h2>
+        <ul>
+          <li>
+            <div class="project-li" onclick="window.location='riflemen.html';">
+              <h3>The Riflemen</h3>
+              <p>
+                Multiplayer FPS set in WW2 with low poly graphics. Fight with only rifles and knives.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="project-li" onclick="window.location='models.html';">
+              <h3>3D Models</h3>
+              <p>
+                Here you can find some of my models that i have published on Sketchfab. Take a look!
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <!-- LinkedIn icon -->
+      <i class="fab fa-linkedin" style="font-size:48px;" onclick="window.location='https://www.linkedin.com/in/niko-viiti%C3%B6-762223220/';"></i>
+      <!-- GitHub icon -->
+      <i class="fab fa-github-square" style="font-size:48px;" onclick="window.location='https://github.com/Niko-Viitio';"></i>
+      <br>
+      <p>© Niko Viitiö 2022</p>
+    </div>
+  </body>
+</html>

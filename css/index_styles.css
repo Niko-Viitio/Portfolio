@@ -47,27 +47,6 @@
   }
 }
 
-/* Body */
-.body {
-  background-color: #282846;
-}
-
-.body-content {
-  max-width: 900px;
-  width: 90%;
-  padding: 70px 0;
-  margin: auto;
-}
-
-.body-content h2 {
-  text-align: center;
-}
-
-.body-content p {
-  text-align: justify;
-}
-
-
 #rightWrapper .content {
   margin: 100px;
 }

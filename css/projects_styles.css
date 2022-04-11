@@ -37,34 +37,6 @@
   float: right;
 }
 
-/* Body */
-.body {
-  background-color: #282846;
-}
-
-.body a {
-  color: #D8EBE4;
-}
-
-.body a:hover {
-  color: #FED049;
-}
-
-.body-content {
-  max-width: 900px;
-  width: 90%;
-  padding: 70px 0;
-  margin: auto;
-}
-
-.body-content h2 {
-  text-align: center;
-}
-
-.body-content p {
-  text-align: justify;
-}
-
 /* Project list */
 ul {
   list-style-type: none;

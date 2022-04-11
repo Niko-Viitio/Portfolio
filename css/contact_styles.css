@@ -25,25 +25,6 @@
   margin: auto;
 }
 
-/* Body */
-.body {
-  background-color: #282846;
-}
-
-.body-content {
-  width: 900px;
-  padding: 70px 0;
-  margin: auto;
-}
-
-.body-content h2 {
-  text-align: center;
-}
-
-.body-content p {
-  text-align: justify;
-}
-
 /* Form */
 label {
   margin: 5px 0;

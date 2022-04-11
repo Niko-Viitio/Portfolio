@@ -15,24 +15,65 @@
     <script src="https://kit.fontawesome.com/4232a106e6.js" crossorigin="anonymous"></script>
   </head>
   <body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h3>Niko Viitiö's Portfolio</h3>
+
+      <ul>
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <div class="sidebar-list">
+          <li><a class="active" href="riflemen.html">The Riflemen</a></li>
+          <li><a href="models.html">3D Models</a></li>
+        </div>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
     <!-- Navigation bar -->
     <div class="navbar">
       <h3>Niko Viitiö's Portfolio</h3>
 
       <ul>
-        <li><a href="contact.html">Contact</a></li>
-        <li>
-          <div class="dropdown">
-            <a class="active" href="projects.html">Projects</a>
-            <div class="dropdown-content">
-              <a class="active" href="riflemen.html">The Riflemen</a>
-              <a href="models.html">3D Models</a>
+        <!-- Navigation bar for pc etc.. -->
+        <div class="navbar-links">
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <div class="dropdown">
+              <a class="active" href="projects.html">Projects</a>
+              <div class="dropdown-content">
+                <a class="active" href="riflemen.html">The Riflemen</a>
+                <a href="models.html">3D Models</a>
+              </div>
             </div>
+          </li>
+          <li><a href="index.html">About Me</a></li>
+        </div>
+
+        <!-- Navigation bar for mobile -->
+        <li>
+          <div class="sidebar-button">
+            <i class="fa fa-bars" onclick="toggleSidebar()"></i>
           </div>
-        </li>
-        <li><a href="index.html">About Me</a></li>
+        </i>
       </ul>
     </div>
+
+    <!-- Sidebar function -->
+    <script>
+      function toggleSidebar() {
+        var sidebar = document.getElementsByClassName("sidebar")[0];;
+        if (sidebar.style.display === "block")
+        {
+          sidebar.style.display = "none";
+        }
+        else
+        {
+          sidebar.style.display = "block";
+        }
+      }
+    </script>
 
     <!-- Header -->
     <div class="header">

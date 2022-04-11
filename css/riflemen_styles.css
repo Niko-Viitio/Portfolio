@@ -37,25 +37,6 @@
   float: right;
 }
 
-/* Body */
-.body {
-  background-color: #282846;
-}
-
-.body-content {
-  width: 900px;
-  padding: 70px 0;
-  margin: auto;
-}
-
-.body-content h2 {
-  text-align: center;
-}
-
-.body-content p {
-  text-align: justify;
-}
-
 .videos iframe {
   margin: 10px 0;
 }

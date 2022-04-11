@@ -14,7 +14,32 @@ hr {
   border-width: 1px;
 }
 
+iframe {
+  max-width: 900px;
+  width: 100%;
+}
+
 /* Classes */
+/* Body */
+.body {
+  background-color: #282846;
+}
+
+.body-content {
+  max-width: 900px;
+  width: 90%;
+  padding: 70px 0;
+  margin: auto;
+}
+
+.body-content h2 {
+  text-align: center;
+}
+
+.body-content p {
+  text-align: justify;
+}
+
 /* Navigation bar*/
 .navbar {
   background-color: #282846;
@@ -22,7 +47,7 @@ hr {
 
 .navbar h3 {
   float: left;
-  margin: 0.5% 16px;
+  margin: 13px 16px;
 }
 
 .navbar ul {

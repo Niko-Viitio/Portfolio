@@ -35,6 +35,18 @@ input {
   float: right;
 }
 
+textarea {
+  max-width: 100%;
+  width: 98.5%;
+}
+
+/* For phones */
+@media screen and (max-width: 600px) {
+  input {
+    width: 98.5%;
+  }
+}
+
 input, textarea {
   resize: none;
   color: #D8EBE4;

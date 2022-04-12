@@ -21,7 +21,7 @@
 }
 
 .header h3 {
-  margin-top: 15px;
+  margin-top: 25px;
 }
 
 .header img {
@@ -36,16 +36,16 @@
 
 .header-content {
   height: 200px;
-  width: 750px;
+  max-width: 675px;
+  width: 100%;
   padding: 8% 0;
   margin: auto;
 }
 
 /* For header image on widescreens */
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1921px) {
   .header-content {
-    transform: scale(1.2);
-    padding: 8% 0;
+    transform: scale(1.1);
   }
 }
 
@@ -53,7 +53,6 @@
 @media screen and (max-width: 1200px) {
   .header-content {
     transform: scale(0.8);
-    padding: 8% 0;
   }
 }
 
@@ -67,7 +66,14 @@
   }
 
   .header-content {
-    transform: scale(0.6);
-    padding: 4% 0;
+    transform: scale(0.7);
+  }
+
+  .header h1 {
+    margin: 0;
+  }
+
+  .header h3 {
+    margin-top: 0;
   }
 }

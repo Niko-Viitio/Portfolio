@@ -16,6 +16,29 @@ headerContent.style.textAlign = "center";
 headerContent.style.width = "200px";
 var width = 200;
 
+//Check if screen is small like in mobile
+function checkScreenSize(x) {
+  if (x.matches) {
+    //Screen is small, header under image
+    img.style.float = "none";
+    img.style.margin = "0";
+    headerContent.style.padding = "4% 0 16% 0";
+    headerContent.style.textAlign = "center";
+  }
+  else {
+    //Screen is big enough for horizontal header
+    img.style.float = "left";
+    img.style.margin = "0 50px 0 0";
+    headerContent.style.padding = "8% 0";
+    headerContent.style.textAlign = "left";
+  }
+}
+
+//Get window width and check it when it changes
+var x = window.matchMedia("(max-width: 800px)");
+checkScreenSize(x);
+x.addListener(checkScreenSize);
+
 //Fist fade icon in
 animateIcon();
 
@@ -76,21 +99,23 @@ function scaleContent() {
   var increase = difference / timeToAnimate * tick;
 
   let timer = setInterval(function() {
-    if (opacity >= 0.9) {
+    if (opacity >= 0.85) {
       //Increase width
       width += increase;
 
+      //Compeleted
       if (width >= targetWidth) {
         width = targetWidth;
         clearInterval(timer);
         timer = null;
       }
 
+      //Apply width so it scales
       headerContent.style.width = width.toString() + "px";
 
-      //Set float & text align
-      img.style.float = "left";
-      headerContent.style.textAlign = "left";
+      //When completed, add width to 100%
+      if (timer == null)
+        headerContent.style.width = "100%";
     }
   }, tick)
 }

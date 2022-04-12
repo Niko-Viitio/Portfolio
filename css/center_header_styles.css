@@ -22,3 +22,34 @@
   padding: 8% 0;
   margin: auto;
 }
+
+/* For header image on widescreens */
+@media screen and (min-width: 1920px) {
+  .header-content {
+    transform: scale(1.2);
+    padding: 8% 0;
+  }
+}
+
+/* For header image on smallish screens */
+@media screen and (max-width: 1200px) {
+  .header-content {
+    transform: scale(0.8);
+    padding: 8% 0;
+  }
+}
+
+/* For header image on very small screens */
+@media screen and (max-width: 800px) {
+  .header {
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-position: center;
+    background-size: auto;
+  }
+
+  .header-content {
+    transform: scale(0.6);
+    padding: 4% 0;
+  }
+}

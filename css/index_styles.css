@@ -41,15 +41,24 @@
   margin: auto;
 }
 
-/* For header image on small screens */
-@media screen and (max-width: 1000px) {
+/* For header image on widescreens */
+@media screen and (min-width: 1920px) {
+  .header-content {
+    transform: scale(1.2);
+    padding: 8% 0;
+  }
+}
+
+/* For header image on smallish screens */
+@media screen and (max-width: 1200px) {
   .header-content {
     transform: scale(0.8);
     padding: 8% 0;
   }
 }
 
-@media screen and (max-width: 750px) {
+/* For header image on very small screens */
+@media screen and (max-width: 800px) {
   .header {
     background-repeat: no-repeat;
     background-attachment: local;

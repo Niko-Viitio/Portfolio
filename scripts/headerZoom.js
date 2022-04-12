@@ -3,6 +3,8 @@ var header = document.getElementsByClassName("header")[0];
 setInterval(function() {
   //Get y offset for zooming the background
   var offset = getYPosition();
+  if (offset < 0) offset = 0;
+
   var sizeMult = 100 + offset / 20;
   if (sizeMult > 120) sizeMult = 120;
 

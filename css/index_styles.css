@@ -50,6 +50,13 @@
 }
 
 @media screen and (max-width: 750px) {
+  .header {
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-position: center;
+    background-size: auto;
+  }
+
   .header-content {
     transform: scale(0.6);
     padding: 4% 0;

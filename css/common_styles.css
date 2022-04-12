@@ -112,7 +112,6 @@ iframe {
   position: absolute;
   background-color: #282846;
 
-  top: 64px;
   min-width: 160px;
   z-index: 1;
 }

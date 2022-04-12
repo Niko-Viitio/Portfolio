@@ -1,28 +1,6 @@
 /* Header */
 .header {
-  color: #FED049;
-  background-color: #007580;
-  font-family: 'Comfortaa', cursive;
-
-  text-shadow: 0 2px 5px black;
-  box-shadow: 0 0 5px 2px black inset;
-
   background-image: url("../images/TheRiflemen1.png");
-  background-repeat: no-repeat;
-  background-attachment: local;
-  background-position: center;
-  background-size: 100%;
-}
-
-.header h1 {
-  font-weight: 700;
-  font-size: 3em;
-}
-
-.header-content {
-  text-align: center;
-  padding: 8% 0;
-  margin: auto;
 }
 
 .bar-fill {

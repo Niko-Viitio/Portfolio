@@ -86,7 +86,6 @@ iframe {
   border-top-style: hidden;
   border-left-style: hidden;
   border-right-style: hidden;
-  /*box-shadow: 0 0 5px 1px black;*/
 }
 
 .dropdown-content .active {
@@ -94,12 +93,6 @@ iframe {
   text-underline-offset: 2px;
 
   border: 0px;
-  /*
-  border: 4px solid #007580;
-  border-top-style: hidden;
-  border-left-style: hidden;
-  border-right-style: hidden;
-  */
 }
 
 .dropdown {

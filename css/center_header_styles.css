@@ -15,19 +15,25 @@
 .header h1 {
   font-weight: 700;
   font-size: 3em;
+  margin-top: 20px;
+}
+
+.header h3 {
+  font-size: 1.4em;
+  margin-top: 0;
 }
 
 .header-content {
   text-align: center;
-  padding: 8% 0;
+  padding: 100px 0;
   margin: auto;
 }
 
 /* For header image on widescreens */
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1921px) {
   .header-content {
-    transform: scale(1.2);
-    padding: 8% 0;
+    transform: scale(1.1);
+    padding: 110px 0;
   }
 }
 
@@ -35,7 +41,7 @@
 @media screen and (max-width: 1200px) {
   .header-content {
     transform: scale(0.8);
-    padding: 8% 0;
+    padding: 80px 0;
   }
 }
 
@@ -50,6 +56,13 @@
 
   .header-content {
     transform: scale(0.6);
-    padding: 4% 0;
+    padding: 60px 0;
+  }
+}
+
+/* For header image on very small screens */
+@media screen and (max-width: 550px) {
+  .header-content {
+    padding: 40px 0 20px;
   }
 }

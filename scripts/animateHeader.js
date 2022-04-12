@@ -22,14 +22,12 @@ function checkScreenSize(x) {
     //Screen is small, header under image
     img.style.float = "none";
     img.style.margin = "0";
-    headerContent.style.padding = "4% 0 16% 0";
     headerContent.style.textAlign = "center";
   }
   else {
     //Screen is big enough for horizontal header
     img.style.float = "left";
     img.style.margin = "0 50px 0 0";
-    headerContent.style.padding = "8% 0";
     headerContent.style.textAlign = "left";
   }
 }

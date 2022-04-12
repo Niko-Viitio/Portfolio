@@ -21,6 +21,7 @@
 }
 
 .header h3 {
+  font-size: 1.4em;
   margin-top: 25px;
 }
 
@@ -36,9 +37,9 @@
 
 .header-content {
   height: 200px;
-  max-width: 675px;
+  max-width: 758px;
   width: 100%;
-  padding: 8% 0;
+  padding: 100px 0;
   margin: auto;
 }
 
@@ -46,17 +47,19 @@
 @media screen and (min-width: 1921px) {
   .header-content {
     transform: scale(1.1);
+    padding: 110px 0;
   }
 }
 
-/* For header image on smallish screens */
+/* For header image on normal smallish screens */
 @media screen and (max-width: 1200px) {
   .header-content {
     transform: scale(0.8);
+    padding: 80px 0;
   }
 }
 
-/* For header image on very small screens */
+/* For header image on small screens */
 @media screen and (max-width: 800px) {
   .header {
     background-repeat: no-repeat;
@@ -67,6 +70,7 @@
 
   .header-content {
     transform: scale(0.7);
+    padding: 0 0 130px;
   }
 
   .header h1 {
@@ -75,5 +79,16 @@
 
   .header h3 {
     margin-top: 0;
+  }
+}
+
+/* For header image on very small screens */
+@media screen and (max-width: 550px) {
+  .header-content {
+    padding: 0 0 90px;
+  }
+
+  .header h3 {
+    display: none;
   }
 }

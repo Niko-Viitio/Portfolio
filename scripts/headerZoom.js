@@ -12,7 +12,7 @@ setInterval(function() {
   var windowWidth = window.innerWidth;
   var widthMult = (1920 / windowWidth) * 0.4;
   if (widthMult < 1) widthMult = 1;
-  else if (widthMult > 1.5) widthMult = 1.5;
+  else if (widthMult > 2) widthMult = 2;
 
   //console.log("Width mult: " + widthMult);
   sizeMult *= widthMult;

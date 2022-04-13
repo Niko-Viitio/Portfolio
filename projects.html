@@ -81,32 +81,15 @@
     <script src="scripts/headerZoom.js" charset="utf-8"></script>
 
     <!-- WIP, progress bar for changing pictures -->
+    <!--
     <div class="bar-fill"></div>
     <div class="bar-background"></div>
-
-    <script type="text/javascript">
-      var barFill = document.getElementsByClassName("bar-fill")[0];
-      var barBackground = document.getElementsByClassName("bar-background")[0];
-      var tick = 10;
-      var maxTime = 5;
-      var time = 0;
-
-      setInterval(updateBar, tick);
-
-      function updateBar() {
-        time += tick / 1000;
-        if (time >= maxTime) time = 0;
-
-        var fill = time / maxTime;
-        var unFill = 1 - fill;
-        barFill.style.width = (fill * 100).toString() + "%";
-        barBackground.style.width = (unFill * 100).toString() + "%";
-      }
-    </script>
+    <script src="scripts/barFill.js" charset="utf-8"></script>
+    -->
 
     <!-- WIP, change header background image -->
     <script>
-      setInterval(changeImage, 5000);
+      setInterval(changeImage, 4000);
 
       const images = ["url('images/TheRiflemen1.png')", "url('images/Platformity2.png')", "url('images/Model1.png')"];
       const projects = ["The Riflemen", "Platformity", "3D Models"];
@@ -134,12 +117,12 @@
         <h2>About Projects</h2>
         <hr>
         <p>
-          As i have been learning how to use Unity and Blender on my free time for a few years now, i have good experience in both even though i'm only first year student.
-          I have made a few mobile games for android with Unity and published them on the Google Play. Some of my models that i have made can be found on Sketchfab.
+          Even though i'm first year student i still have solid knowledge in programming and modelling, as i have been practicing them on my free time.
+          I have made a few mobile games for android and published them on Google Play.
         </p>
         <br>
         <p>
-          Currently i'm making multiplayer FPS called "The Riflemen" with Unity using Photon for networking. It's work in progress but i plan to release it to the Steam.
+          Currently i'm making multiplayer FPS called "The Riflemen" with Unity using Photon for networking. It's work in progress but i plan to release it on Steam.
           I started this project before my studies, on july 2021.
         </p>
         <hr>

@@ -30,6 +30,7 @@
           <li><a class="active" href="projects.html">Projects</a></li>
           <div class="sidebar-list">
             <li><a href="riflemen.html">The Riflemen</a></li>
+            <li><a href="platformity.html">Platformity</a></li>
             <li><a href="models.html">3D Models</a></li>
           </div>
           <li><a href="contact.html">Contact</a></li>
@@ -57,6 +58,7 @@
               <a class="active" href="projects.html">Projects</a>
               <div class="dropdown-content">
                 <a href="riflemen.html">The Riflemen</a>
+                <a href="platformity.html">Platformity</a>
                 <a href="models.html">3D Models</a>
               </div>
             </div>
@@ -67,19 +69,7 @@
     </div>
 
     <!-- Sidebar function -->
-    <script>
-      function toggleSidebar() {
-        var sidebar = document.getElementsByClassName("sidebar-holder")[0];;
-        if (sidebar.style.display === "block")
-        {
-          sidebar.style.display = "none";
-        }
-        else
-        {
-          sidebar.style.display = "block";
-        }
-      }
-    </script>
+    <script src="scripts/toggleSidebar.js" charset="utf-8"></script>
 
     <!-- Header -->
     <div class="header">
@@ -118,8 +108,8 @@
     <script>
       setInterval(changeImage, 5000);
 
-      const images = ["url('images/TheRiflemen1.png')", "url('images/Model1.png')"];
-      const projects = ["The Riflemen", "3D Models"];
+      const images = ["url('images/TheRiflemen1.png')", "url('images/Platformity2.png')", "url('images/Model1.png')"];
+      const projects = ["The Riflemen", "Platformity", "3D Models"];
       var index = 0;
 
       function changeImage() {
@@ -163,6 +153,14 @@
               <h3>The Riflemen</h3>
               <p>
                 Multiplayer FPS set in WW2 with low poly graphics. Fight with only rifles and knives.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="project-li" onclick="window.location='platformity.html';">
+              <h3>Platformity</h3>
+              <p>
+                Puzzle platformer with simple graphics. Add blocks and avoid spikes!
               </p>
             </div>
           </li>

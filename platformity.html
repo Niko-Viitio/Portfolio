@@ -2,9 +2,121 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Platformity</title>
+    <!-- Link css -->
+    <link rel="stylesheet" href="css/common_styles.css">
+    <link rel="stylesheet" href="css/center_header_styles.css">
+    <link rel="stylesheet" href="css/platformity_styles.css">
+    <!-- Load fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Inconsolata&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/4232a106e6.js" crossorigin="anonymous"></script>
   </head>
   <body>
 
+    <!-- Sidebar -->
+    <div class="sidebar-holder">
+      <div class="sidebar">
+        <!-- Close icon -->
+        <div class="sidebar-button">
+          <i class="fas fa-arrow-circle-left" onclick="toggleSidebar()"></i>
+        </div>
+
+        <ul>
+          <li><a href="index.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <div class="sidebar-list">
+            <li><a href="riflemen.html">The Riflemen</a></li>
+            <li><a class="active" href="platformity.html">Platformity</a></li>
+            <li><a href="models.html">3D Models</a></li>
+          </div>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="darken"></div>
+    </div>
+
+    <!-- Navigation bar -->
+    <div class="navbar">
+      <!-- Navigation bar button for mobile -->
+      <div class="sidebar-button">
+        <i class="fa fa-bars" onclick="toggleSidebar()"></i>
+      </div>
+
+      <h3>Niko Viitiö's Portfolio</h3>
+
+      <!-- Navigation bar for pc etc.. -->
+      <ul>
+        <div class="navbar-links">
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <div class="dropdown">
+              <a href="projects.html">Projects</a>
+              <div class="dropdown-content">
+                <a href="riflemen.html">The Riflemen</a>
+                <a class="active" href="platformity.html">Platformity</a>
+                <a href="models.html">3D Models</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="index.html">About Me</a></li>
+        </div>
+      </ul>
+    </div>
+
+    <!-- Sidebar function -->
+    <script src="scripts/toggleSidebar.js" charset="utf-8"></script>
+
+    <!-- Header -->
+    <div class="header">
+      <div class="header-content">
+        <h1>Platformity</h1>
+        <h3>Puzzle platformer with simplistic graphics</h3>
+      </div>
+    </div>
+    <script src="scripts/headerZoom.js" charset="utf-8"></script>
+
+    <!-- Body -->
+    <div class="body">
+      <!-- Description -->
+      <div class="body-content">
+        <h2>What's That?</h2>
+        <hr>
+        <p>
+          Platformity is a platformer game with puzzlelike elements. Player needs to avoid different obstacles such as spikes, falling spikes and gravity fields.
+          In order to progress the levels players need to add blocks on their path. However blocks are limited so that only three can be placed simultaneously.
+        </p>
+        <br>
+        <p>
+          My part of this project was programming the level editor so our main level designer could easily test and develop new levels.
+          Later on i programmed some animations and sounds for the main character.
+        </p>
+        <hr>
+      </div>
+
+      <!-- Showcase videos -->
+      <div class="body-content">
+        <h2>Gameplay videos</h2>
+        <hr>
+        <div class="videos">
+          <iframe src="https://www.youtube.com/embed/C82UK09SANM" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <!-- LinkedIn icon -->
+      <i class="fab fa-linkedin" style="font-size:48px;" onclick="window.location='https://www.linkedin.com/in/niko-viiti%C3%B6-762223220/';"></i>
+      <!-- GitHub icon -->
+      <i class="fab fa-github-square" style="font-size:48px;" onclick="window.location='https://github.com/Niko-Viitio';"></i>
+      <br>
+      <p>© Niko Viitiö 2022</p>
+    </div>
   </body>
 </html>
